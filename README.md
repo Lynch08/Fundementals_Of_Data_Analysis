@@ -1,7 +1,7 @@
 # Overview or Numpy random Package
 ***
 
-Overvieew if the numpy.random package
+This Repository contains an overvieew if the numpy.random package in a juypter notebook.
 
 ## How to run
 
