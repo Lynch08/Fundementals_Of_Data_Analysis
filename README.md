@@ -7,7 +7,7 @@ This Repository contains an overvieew if the numpy.random package in a juypter n
 ## Quick Steps
 View this notebook in static form by clicking the following image 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Lynch08/Fundementals_Of_Data_Analysis/HEAD?labpath=Numpy_Random.ipnb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Lynch08/Fundementals_Of_Data_Analysis/HEAD?labpath=Numpy_Random.ipynb)
 
 ## How to run
 
