@@ -16,11 +16,14 @@ Link to the matplotlib.pyplot documentation
 4. To expand my knowledge of the python libraries and tools to make the code as simple and readable as possible for the reader
 5. To learn how to best optimise my time between research, programming, problem-solving and analysis.
 
-## The Task
-[Assessment Sheet](http://localhost:8888/doc/tree/Fundamentals%20of%20Data%20Analysis%20assessment%20sheet.pdf)
+## The Task and Expectations
+[Assessment Sheet](https://github.com/Lynch08/Fundementals_Of_Data_Analysis/blob/main/Fundamentals%20of%20Data%20Analysis%20assessment%20sheet.pdf)
 
 ## The Repository Content
-#### pyplot.ipynb
+##### pyplot.ipynb
+##### Fundamentals of Data Analysis Assessment Sheet
+##### nfl.csv
+##### requirements.txt
 
 
 
