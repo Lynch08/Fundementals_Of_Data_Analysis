@@ -1,4 +1,6 @@
 # Overview of Pytplot Package
+![](https://upload.wikimedia.org/wikipedia/en/5/56/Matplotlib_logo.svg)
+![](https://upload.wikimedia.org/wikipedia/commons/5/51/Central_Applications_Office.png)
 ***
 Investigation of the numpy.random package
 
@@ -19,6 +21,7 @@ Link to the matplotlib.pyplot documentation
 
 
 ## Table of Contents
+See pyplot.ipynb - main headings are hyperlinked
 
 ## Planned Project Outcomes
 1. To break the project down into small manageable tasks
@@ -53,15 +56,35 @@ Save the repository to a local folder location on your machine.
 You will need to navigate to this folder location on the command line in order to run the program.
 Details on how to run each individual script in this repository is included later in this Readme file.
 
+### Dependancies 
+
+I have a requirements.txt file that you can use to install all of the dependencies required to run the notebook in the exact same environment - however below are the main dependencies if you would like to do that manually. After cloning the repository navigate to the folder using the command prompt and use the ```pip install``` command if you want to use the requirments.txt file.
+See this video for full instructions on how to install: https://www.youtube.com/watch?v=mBcmdcmZXJg 
+
+
+**Required**
+- Download Python environment - I recommend ([Anaconda](https://www.anaconda.com/products/individual)) 
+    - Libraries to import within the python environment (all are linked to official documentation)
+        - [Numpy](https://numpy.org/doc/)
+        - [Pandas](https://pandas.pydata.org/docs/)
+        - [matplotlib.pyplot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html)
+        - [Seaborn](https://seaborn.pydata.org/)
+        
+
+**Not required but helpful**  
+cmder - this is a command line emulator that in my opinion is easier to use and cleaner than the windows cmd window. [Download Cmder Here](https://cmder.net/)
+
 ##### Running the Jupyter Notebook
 On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd command to change directory.
 Type jupyter lab on the command line and press enter
 After a short wait jupyter notebook will open in your web browser (I would suggest Chrome).
-Open the numpy.random.ipynb notebook in the browser and the notebook containing the code and comments that I wrote for this assignment will be displayed.
+Open the pyplot.ipynb notebook in the browser and the notebook containing the code and comments that I wrote for this assignment will be displayed.
 Before beginning I would suggest going to the Kernel option on the menu bar and if you want to run the notebook yourself choose "Restart Kernel and Clear Outputs". If you want the notebook to run automatically choose "Restart Kernel and Run All Cells"
 If you want to run the code in any particular cell, click into the cell, hold down the shift key, press enter and the command will run and the output wil be displayed in the next cell.
 To change between edit and read mode at any time press the ESC key.
 When you have finished viewing the jupyter notebook close the web browser and return to the command line. Press Ctrl + C on the command line to kill the program.
+
+
 
 ## Citations
 https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html
