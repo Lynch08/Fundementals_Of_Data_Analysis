@@ -40,8 +40,8 @@ See cao.ipynb - main headings are hyperlinked.
 If you wish to view the pyplot.ipynb notebook in static (uneditable) format click here:  
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/Lynch08/Fundementals_Of_Data_Analysis/blob/main/pyplot.ipynb)  
 
-If you wish to view the pyplot.ipynb notebook in static (uneditable) format click here:   
-
+If you wish to view the cao.ipynb notebook in static (uneditable) format click here:   
+[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/Lynch08/Fundementals_Of_Data_Analysis/blob/main/cao.ipynb) 
 
 ## How to download this repository (editable version)
 Go to GitHub.com.
@@ -79,14 +79,14 @@ cmder - this is a command line emulator that in my opinion is easier to use and 
 ##### pyploy.ipynb
 The irisdata.csv and nfl_2020_team_data.csv will need to be kept in the data_pyplot folder and left unedited for the pyplot.ipynb notebook to run the same as from the repo.  
 
-irisdata.csv - a csv file of the Iris data set from https://www.kaggle.com/uciml/iris
-nfl_2020_team_data.csv - Added from https://www.pro-football-reference.com/years/2020/advanced.htm
+irisdata.csv - a csv file of the Iris data set from https://www.kaggle.com/uciml/iris  
+nfl_2020_team_data.csv - Added from https://www.pro-football-reference.com/years/2020/advanced.htm  
 
 ##### cao.ipynb
-The ForExFix_comp.csv and 2019POINTS_20211104103000_edited.csv will need to be kept in the data_cao folder and left unedited for the cao.ipynb notebook to run the same as from the repo.  
+The ForExFix_comp.csv and 2019POINTS_20211104103000_edited.csv will need to be kept in the data_cao folder and left unedited for the cao.ipynb notebook to run the same as from the repo.   
 
-2019POINTS_20211104103000_edited.csv - Manually edited to remove spurious data from df
-ForExFix_comp.csv - Manually edited to remove spurious data from df
+2019POINTS_20211104103000_edited.csv - Manually edited to remove spurious data from df  
+ForExFix_comp.csv - Manually edited to remove spurious data from df  
 
 ### Running the Jupyter Notebook
  - On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd command to change directory.  
