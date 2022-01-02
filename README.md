@@ -9,22 +9,15 @@ GMIT Email: G003987951@gmit.ie
 Personal Email: E.Lynch@Kostal.com
 
 This repository contains two jupter notebooks.  
-This Readme will first address the notebook investigating the matplotlib.pyplot python package (pyplot.ipynb) and then the notebook andalysing the CAO points (cao.ipynb)
-
-# Overview of Pyplot Package
-![](https://upload.wikimedia.org/wikipedia/en/5/56/Matplotlib_logo.svg)  
-
-This Repository contains an overview if the matplotlib.pyplot package (pyplot.ipynb) in a juypter notebook for the Fundamentals of Data Analysis Module(GMIT - Wimter 2021)
-
-Link to the matplotlib.pyplot documentation
-[Offical pyplot Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html)
+This Readme will first address the parts of the repository that are commen then quickly outline the notebook investigating the matplotlib.pyplot python package (pyplot.ipynb) and then the notebook andalysing the CAO points (cao.ipynb)
 
 
 ## Table of Contents
 See pyplot.ipynb - main headings are hyperlinked
+See cao.ipynb - main headings are hyperlinked
 
 ## Planned Project Outcomes
-1. To break the project down into small manageable tasks
+1. To break the project and assignment down into small manageable tasks
 2. To gain an understanding of the matplotlib.pyplot package
 3. To integrate the skills I had acquired so far in this course to visualise and analyse my "datasets", and display my findings
 4. To expand my knowledge of the python libraries and tools to make the code as simple and readable as possible for the reader
@@ -34,20 +27,20 @@ See pyplot.ipynb - main headings are hyperlinked
 [Assessment Sheet](https://github.com/Lynch08/Fundementals_Of_Data_Analysis/blob/main/Fundamentals%20of%20Data%20Analysis%20assessment%20sheet.pdf)
 
 ## The Repository Content 
- - 1 jupyter notebook (pyplot.ipynb) that holds the explanation, code, visuals and citeations for the assignment.
- - The Assignment details in PDF form from Ian Mcloughlin
- - A requirments.txt file that contains all of the dependancies required to run the assignment in the same environment
- - An Images folder where I have stored some PNG files to display in the notebook
+ - 2 jupyter notebooks (pyplot.ipynb and cao.ipynb) that holds the explanation, code, visuals and citeations for the assignment and project.
+ - The assignment and project details in PDF form from Ian Mcloughlin
+ - A requirments.txt file that contains all of the dependancies required to run the both notebooks from the repository in the same environment
  - A readme file explaining the objectives, outcomes and instructions on how to view the notebook in both editable and static format.
  - A data_pyplot folder that contains nfl_2020_team_data.csv a csv file that I read in for one of my plots in pyplot.ipynb and irisdata.csv a csv file of the Iris data set for one of my plots in pyplot.ipynb
+ - A data_cao folder that contains 2 edited CSV files (2019POINTS_20211104103000_edited.csv and ForExFix_comp.csv). I did some manual changes to clean the data.
+
+## View Notebook in Static Format(Online)
+If you wish to view the notebook in static (uneditable) format click here:  
+[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/Lynch08/Fundementals_Of_Data_Analysis/blob/main/pyplot.ipynb)
 
 
-## Python and the Libraries Used
-View Notebook in Static Format(Online)
-If you wish to view the notebook in static (uneditable) format click here:
 
-
-##### How to download this repository (editable version)
+## How to download this repository (editable version)
 Go to GitHub.com.
 Go to my repository: https://github.com/Lynch08/Programming_For_Data_Analysis
 Click the clone/download button.
@@ -74,20 +67,84 @@ See this video for full instructions on how to install: https://www.youtube.com/
 cmder - this is a command line emulator that in my opinion is easier to use and cleaner than the windows cmd window. [Download Cmder Here](https://cmder.net/)
 
 ##### Running the Jupyter Notebook
-On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd command to change directory.
-Type jupyter lab on the command line and press enter
-After a short wait jupyter notebook will open in your web browser (I would suggest Chrome).
-Open the pyplot.ipynb notebook in the browser and the notebook containing the code and comments that I wrote for this assignment will be displayed.
-Before beginning I would suggest going to the Kernel option on the menu bar and if you want to run the notebook yourself choose "Restart Kernel and Clear Outputs". If you want the notebook to run automatically choose "Restart Kernel and Run All Cells"
-If you want to run the code in any particular cell, click into the cell, hold down the shift key, press enter and the command will run and the output wil be displayed in the next cell.
-To change between edit and read mode at any time press the ESC key.
-When you have finished viewing the jupyter notebook close the web browser and return to the command line. Press Ctrl + C on the command line to kill the program.
+ - On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd command to change directory.  
+ - Type jupyter lab on the command line and press enter.  
+ - After a short wait jupyter notebook will open in your web browser (I would suggest Chrome).  
+ - Open the required notebook in the browser and the notebook containing the code and comments that I wrote for this assignment will be displayed.  
+ - Before beginning I would suggest going to the Kernel option on the menu bar and if you want to run the notebook yourself choose "Restart Kernel and Clear Outputs". If you want the notebook to run automatically choose "Restart Kernel and Run All Cells".  
+ - If you want to run the code in any particular cell, click into the cell, hold down the shift key, press enter and the command will run and the output wil be displayed in the next cell - please note the cells are not ready to be run so you cannot begin trying to run cells halfway down the note book.  
+ - To change between edit and read mode at any time click into a cell and press the ESC key.  
+ - When you have finished viewing the jupyter notebook close the web browser and return to the command line. Press Ctrl + C on the command line to kill the program.  
 
 
 
 ## Citations
-https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html
+All citations are at the end of the pyplot.ipynb notebook and refrence the section they citing.
+All citations are at the end of the cao.ipynb notebook and refrence the section they citing.
 
-# Anslysis of CAO Points
+
+
+## pyplot.ipynb
+![](https://upload.wikimedia.org/wikipedia/en/5/56/Matplotlib_logo.svg)  
+
+This Repository contains an investigation into the the matplotlib.pyplot package (pyplot.ipynb) in a juypter notebook for the Fundamentals of Data Analysis Module(GMIT - Wimter 2021)
+
+Link to the matplotlib.pyplot documentation
+[Offical pyplot Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html)
+
+#### Explore
+This notebook is very interactive.  
+Especially in section 2. Functionality in pyplot. In this section I go through some of the customization and visualisation functions when making a plot.  
+You can change the values for x and y. I used sine and cosine but you can plug in or generate your own values using [Numpy](https://numpy.org/doc/stable/reference/random/generator.html) to see how it effects the plot.
+
+```python
+
+# Generates an array of cos(x) values
+# Creating an array with 100 values from 0 to 2pi
+x = np.linspace(0,2*np.pi,100)
+
+# An array with the sine of all the values in array x
+y = np.sin(x)
+
+# An array with the cos of all the values in array x
+y1 = np.cos(x)
+```
+In the section below you can change the size of the plot, axis-labels, set axis limits, change the plot point symbol annd so on.  You can also go o the [pyplot documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html) where there are over 150 matplotlib.pyplot.X functions to choose from and play with. 
+
+```python
+# Produces the figure
+plt.figure(figsize = (12,9))
+
+# Adds a grid
+plt.grid(True)
+
+# Adds a title
+plt.title("Plot of a sine and cosine function")
+
+# Adds label for the x-axis
+plt.xlabel("x")
+
+# Defines a region along the x-axis to be displayed
+plt.xlim(0,2*np.pi)
+
+# Plots the sine function with red + signs and defines a legend label
+plt.plot(x,y,'r+',label="sin(x)")
+
+# Plots the cos function with green crosses and defines a legend label
+plt.plot(x,y1,'gx',label="cos(x)")
+
+# Adds a legend in the best position
+plt.legend(loc='best')
+
+```
+
+In the 3 interesting plots section the first plot, section on Histograms is interactive but the rest of the graphs are based off static or scraped data so you will be able to interact with the customisation, but if you change the data input the results may differ greatly and the functionality will almost certainly not be as robust. 
+
+## cao.ipynb
 ![](https://upload.wikimedia.org/wikipedia/commons/5/51/Central_Applications_Office.png)
-***
+
+
+This Repository contains an investigation into the the first round cao points for the last 3 years in a juypter notebook for the Fundamentals of Data Analysis Module(GMIT - Wimter 2021)
+
+Link to the CAO website
+[CAO Website](https://www.cao.ie/)
