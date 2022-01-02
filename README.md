@@ -1,20 +1,20 @@
 
-Assignment: Programming for Data Analysis, GMIT 2021
+Assignment: Programming for Data Analysis, GMIT 2021  
 
-Lecturer: Dr Ian Mcloughlin
+Lecturer: Dr Ian Mcloughlin  
 
-Author: Enda Lynch
-Github Username: Lynch08
-GMIT Email: G003987951@gmit.ie
-Personal Email: E.Lynch@Kostal.com
+Author: Enda Lynch  
+Github Username: Lynch08  
+GMIT Email: G003987951@gmit.ie  
+Personal Email: E.Lynch@Kostal.com  
 
-This repository contains two jupter notebooks.  
+This repository contains two jupter notebooks.    
 This Readme will first address the parts of the repository that are commen then quickly outline the notebook investigating the matplotlib.pyplot python package (pyplot.ipynb) and then the notebook andalysing the CAO points (cao.ipynb)
 
 
 ## Table of Contents
-See pyplot.ipynb - main headings are hyperlinked
-See cao.ipynb - main headings are hyperlinked
+See pyplot.ipynb - main headings are hyperlinked.    
+See cao.ipynb - main headings are hyperlinked.    
 
 ## Planned Project Outcomes
 1. To break the project and assignment down into small manageable tasks
@@ -35,9 +35,10 @@ See cao.ipynb - main headings are hyperlinked
  - A data_cao folder that contains 2 edited CSV files (2019POINTS_20211104103000_edited.csv and ForExFix_comp.csv). I did some manual changes to clean the data.
 
 ## View Notebook in Static Format(Online)
-If you wish to view the notebook in static (uneditable) format click here:  
-[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/Lynch08/Fundementals_Of_Data_Analysis/blob/main/pyplot.ipynb)
+If you wish to view the pyplot.ipynb notebook in static (uneditable) format click here:  
+[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/Lynch08/Fundementals_Of_Data_Analysis/blob/main/pyplot.ipynb)  
 
+If you wish to view the pyplot.ipynb notebook in static (uneditable) format click here:   
 
 
 ## How to download this repository (editable version)
