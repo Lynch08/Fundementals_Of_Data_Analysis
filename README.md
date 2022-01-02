@@ -1,10 +1,3 @@
-# Overview of Pytplot Package
-![](https://upload.wikimedia.org/wikipedia/en/5/56/Matplotlib_logo.svg)  
-
-# Anslysis of CAO Points
-![](https://upload.wikimedia.org/wikipedia/commons/5/51/Central_Applications_Office.png)
-***
-Investigation of the numpy.random package
 
 Assignment: Programming for Data Analysis, GMIT 2021
 
@@ -15,8 +8,13 @@ Github Username: Lynch08
 GMIT Email: G003987951@gmit.ie
 Personal Email: E.Lynch@Kostal.com
 
+This repository contains two jupter notebooks.  
+This Readme will first address the notebook investigating the matplotlib.pyplot python package (pyplot.ipynb) and then the notebook andalysing the CAO points (cao.ipynb)
 
-This Repository contains an overview if the matplotlib.pyplot package in a juypter notebook for the Fundamentals of Data Analysis Module(GMIT - Wimter 2021)
+# Overview of Pyplot Package
+![](https://upload.wikimedia.org/wikipedia/en/5/56/Matplotlib_logo.svg)  
+
+This Repository contains an overview if the matplotlib.pyplot package (pyplot.ipynb) in a juypter notebook for the Fundamentals of Data Analysis Module(GMIT - Wimter 2021)
 
 Link to the matplotlib.pyplot documentation
 [Offical pyplot Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html)
@@ -35,23 +33,22 @@ See pyplot.ipynb - main headings are hyperlinked
 ## The Task and Expectations
 [Assessment Sheet](https://github.com/Lynch08/Fundementals_Of_Data_Analysis/blob/main/Fundamentals%20of%20Data%20Analysis%20assessment%20sheet.pdf)
 
-## The Repository Content
- - 1 jupyter notebook (numpy-random.ipynb) that holds the explanation, code, visuals and citeations for the assignment.
+## The Repository Content 
+ - 1 jupyter notebook (pyplot.ipynb) that holds the explanation, code, visuals and citeations for the assignment.
  - The Assignment details in PDF form from Ian Mcloughlin
  - A requirments.txt file that contains all of the dependancies required to run the assignment in the same environment
  - An Images folder where I have stored some PNG files to display in the notebook
  - A readme file explaining the objectives, outcomes and instructions on how to view the notebook in both editable and static format.
- - nfl.csv a csv file that I read in for one of my plots in pyplot.ipynb
- - IrisdataCSV.csv a csv file of the Iris data set for one of my plots in pyplot.ipynb
+ - A data_pyplot folder that contains nfl_2020_team_data.csv a csv file that I read in for one of my plots in pyplot.ipynb and irisdata.csv a csv file of the Iris data set for one of my plots in pyplot.ipynb
 
 
 ## Python and the Libraries Used
 View Notebook in Static Format(Online)
 If you wish to view the notebook in static (uneditable) format click here:
-nbviewer
+
 
 ##### How to download this repository (editable version)
-Go to GitHub.
+Go to GitHub.com.
 Go to my repository: https://github.com/Lynch08/Programming_For_Data_Analysis
 Click the clone/download button.
 Save the repository to a local folder location on your machine.
@@ -91,3 +88,6 @@ When you have finished viewing the jupyter notebook close the web browser and re
 ## Citations
 https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html
 
+# Anslysis of CAO Points
+![](https://upload.wikimedia.org/wikipedia/commons/5/51/Central_Applications_Office.png)
+***
