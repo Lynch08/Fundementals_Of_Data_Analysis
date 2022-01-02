@@ -28,7 +28,7 @@ See cao.ipynb - main headings are hyperlinked.
 
 ## The Repository Content 
  - 2 jupyter notebooks (pyplot.ipynb and cao.ipynb) that holds the explanation, code, visuals and citeations for the assignment and project.
- - The assignment and project details in PDF form from Ian Mcloughlin
+ - The assignment and project details in PDF form from Dr. Ian Mcloughlin
  - A requirments.txt file that contains all of the dependancies required to run the both notebooks from the repository in the same environment
  - A readme file explaining the objectives, outcomes and instructions on how to view the notebook in both editable and static format.
  - A data_pyplot folder that contains nfl_2020_team_data.csv a csv file that I read in for one of my plots in pyplot.ipynb and irisdata.csv a csv file of the Iris data set for one of my plots in pyplot.ipynb
@@ -49,7 +49,7 @@ Save the repository to a local folder location on your machine.
 You will need to navigate to this folder location on the command line in order to run the program.
 Details on how to run each individual script in this repository is included later in this Readme file.
 
-### Dependancies 
+### Python Dependancies 
 
 I have a requirements.txt file that you can use to install all of the dependencies required to run the notebook in the exact same environment - however below are the main dependencies if you would like to do that manually. After cloning the repository navigate to the folder using the command prompt and use the ```pip install``` command if you want to use the requirments.txt file.
 See this video for full instructions on how to install: https://www.youtube.com/watch?v=mBcmdcmZXJg 
@@ -67,7 +67,17 @@ See this video for full instructions on how to install: https://www.youtube.com/
 **Not required but helpful**  
 cmder - this is a command line emulator that in my opinion is easier to use and cleaner than the windows cmd window. [Download Cmder Here](https://cmder.net/)
 
-##### Running the Jupyter Notebook
+
+### Notebook Dependancies 
+
+##### pyploy.ipynb
+The irisdata.csv and nfl_2020_team_data.csv will need to be kept in the data_pyplot folder and left unedited for the pyplot.ipynb notebook to run the same as from the repo. 
+
+##### cao.ipynb
+The ForExFix_comp.csv and 2019POINTS_20211104103000_edited.csv will need to be kept in the data_cao folder and left unedited for the cao.ipynb notebook to run the same as from the repo. 
+
+
+### Running the Jupyter Notebook
  - On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd command to change directory.  
  - Type jupyter lab on the command line and press enter.  
  - After a short wait jupyter notebook will open in your web browser (I would suggest Chrome).  
