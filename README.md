@@ -1,6 +1,8 @@
 
 Assignment: Programming for Data Analysis, GMIT 2021  
 
+![](https://en.wikipedia.org/wiki/Galway-Mayo_Institute_of_Technology#/media/File:GMIT_Logo_2011a.jpg)
+
 Lecturer: Dr Ian Mcloughlin  
 
 Author: Enda Lynch  
@@ -9,7 +11,7 @@ GMIT Email: G003987951@gmit.ie
 Personal Email: E.Lynch@Kostal.com  
 
 This repository contains two jupter notebooks.    
-This Readme will first address the parts of the repository that are commen then quickly outline the notebook investigating the matplotlib.pyplot python package (pyplot.ipynb) and then the notebook andalysing the CAO points (cao.ipynb)
+This Readme will first address the parts of the repository that are common. Then outline some of the ways you can explore the notebook investigating the matplotlib.pyplot python package (pyplot.ipynb) and then the notebook andalysing the CAO points (cao.ipynb)
 
 
 ## Table of Contents
@@ -32,7 +34,7 @@ See cao.ipynb - main headings are hyperlinked.
  - A requirments.txt file that contains all of the dependancies required to run the both notebooks from the repository in the same environment
  - A readme file explaining the objectives, outcomes and instructions on how to view the notebook in both editable and static format.
  - A data_pyplot folder that contains nfl_2020_team_data.csv a csv file that I read in for one of my plots in pyplot.ipynb and irisdata.csv a csv file of the Iris data set for one of my plots in pyplot.ipynb
- - A data_cao folder that contains 2 edited CSV files (2019POINTS_20211104103000_edited.csv and ForExFix_comp.csv). I did some manual changes to clean the data.
+ - A data_cao folder that contains 2 edited CSV files (2019POINTS_20211104103000_edited.csv and ForExFix_comp.csv). I did some manual changes in excel to clean the data.
 
 ## View Notebook in Static Format(Online)
 If you wish to view the pyplot.ipynb notebook in static (uneditable) format click here:  
@@ -57,12 +59,16 @@ See this video for full instructions on how to install: https://www.youtube.com/
 
 **Required**
 - Download Python environment - I recommend ([Anaconda](https://www.anaconda.com/products/individual)) 
-    - Libraries to import within the python environment (all are linked to official documentation)
+    - Libraries to import within the python environment (all are linked to official documentation - **only first 4 required for pyplot.ipynb, all required for cao.ipynb**)
         - [Numpy](https://numpy.org/doc/)
         - [Pandas](https://pandas.pydata.org/docs/)
         - [matplotlib.pyplot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html)
         - [Seaborn](https://seaborn.pydata.org/)
-        
+        - [Reg-Ex(Re)](https://docs.python.org/3/library/re.html)
+        - [PyPDF2](https://pythonhosted.org/PyPDF2/PdfFileReader.html)
+        - [Requests](https://docs.python-requests.org/en/latest/)
+        - [urllib.request](urllib.request)
+        - [Datetime](https://docs.python.org/3/library/datetime.html)
 
 **Not required but helpful**  
 cmder - this is a command line emulator that in my opinion is easier to use and cleaner than the windows cmd window. [Download Cmder Here](https://cmder.net/)
@@ -71,11 +77,16 @@ cmder - this is a command line emulator that in my opinion is easier to use and 
 ### Notebook Dependancies 
 
 ##### pyploy.ipynb
-The irisdata.csv and nfl_2020_team_data.csv will need to be kept in the data_pyplot folder and left unedited for the pyplot.ipynb notebook to run the same as from the repo. 
+The irisdata.csv and nfl_2020_team_data.csv will need to be kept in the data_pyplot folder and left unedited for the pyplot.ipynb notebook to run the same as from the repo.  
+
+irisdata.csv - a csv file of the Iris data set from https://www.kaggle.com/uciml/iris
+nfl_2020_team_data.csv - Added from https://www.pro-football-reference.com/years/2020/advanced.htm
 
 ##### cao.ipynb
-The ForExFix_comp.csv and 2019POINTS_20211104103000_edited.csv will need to be kept in the data_cao folder and left unedited for the cao.ipynb notebook to run the same as from the repo. 
+The ForExFix_comp.csv and 2019POINTS_20211104103000_edited.csv will need to be kept in the data_cao folder and left unedited for the cao.ipynb notebook to run the same as from the repo.  
 
+2019POINTS_20211104103000_edited.csv - Manually edited to remove spurious data from df
+ForExFix_comp.csv - Manually edited to remove spurious data from df
 
 ### Running the Jupyter Notebook
  - On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd command to change directory.  
@@ -90,7 +101,7 @@ The ForExFix_comp.csv and 2019POINTS_20211104103000_edited.csv will need to be k
 
 
 ## Citations
-All citations are at the end of the pyplot.ipynb notebook and refrence the section they citing.
+All citations are at the end of the pyplot.ipynb notebook and refrence the section they citing.  
 All citations are at the end of the cao.ipynb notebook and refrence the section they citing.
 
 
@@ -159,3 +170,44 @@ This Repository contains an investigation into the the first round cao points fo
 
 Link to the CAO website
 [CAO Website](https://www.cao.ie/)
+
+#### Explore
+
+I would advise not to manipulat the code in section 2 "Scraping the Points" unless you are very familiar with scraping data as how the data is formatted is vital to how the code runs further down the notebook. 
+
+In the analysis section you can do some limited manipulation.  
+There is some oppertunitly to play with the graph visualisation by changing the amount of bins or the way the labels are set up on the axes, however no data manipulation.
+
+```python
+# Plot Size
+plt.figure(figsize = (12, 8))
+
+# Adds a grid
+plt.grid(True, linestyle='--', linewidth=1)
+
+# Type of plot, kde adds kde lin, bins determins number of bins
+sns.histplot(z, kde = True, bins= 15)
+
+# Get or set the current tick locations and labels of the x-axis
+plt.xticks(np.arange(0, 1200, step=50))
+
+# Get or set the current tick locations and labels of the y-axis
+plt.yticks(np.arange(0, 400, step=50))
+
+# Sets the title of the plot
+plt.title('2019 CAO POINTS')
+```
+
+Here i created a new data frame by setting a condition on one of the columns in the original data frame
+
+```python
+# Bring all points back that show the course was not available in 2019
+incr_ana = firstrndpts.loc[(firstrndpts['points_r1_2021'] >= 1)]
+```
+
+Below I added a new column (boolean) by setting conditions on two of the other columns, you can do this and even add more conditions - see this article in [ThisPointer.Com](https://thispointer.com/python-pandas-select-rows-in-dataframe-by-conditions-on-multiple-columns/) for ways in which to use this functionality to include and exclude data.
+
+```python
+# Add column that shows if there was an increase in points after first year
+incr_ana_1['Increase after 1st year'] = incr_ana_1['points_r1_2021'] > incr_ana_1['points_r1_2020']
+```
