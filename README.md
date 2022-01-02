@@ -1,7 +1,7 @@
 
 Assignment: Programming for Data Analysis, GMIT 2021  
 
-![](https://en.wikipedia.org/wiki/Galway-Mayo_Institute_of_Technology#/media/File:GMIT_Logo_2011a.jpg)
+![](https://upload.wikimedia.org/wikipedia/en/6/6b/GMIT_Logo_2011a.jpg)
 
 Lecturer: Dr Ian Mcloughlin  
 
