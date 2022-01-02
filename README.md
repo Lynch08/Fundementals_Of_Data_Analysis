@@ -87,6 +87,8 @@ The ForExFix_comp.csv and 2019POINTS_20211104103000_edited.csv will need to be k
 
 2019POINTS_20211104103000_edited.csv - Manually edited to remove spurious data from df  
 ForExFix_comp.csv - Manually edited to remove spurious data from df  
+central_applications_office.png - Not required for functionality, visualisation only.  
+points_hists.PNG - Not required for functionality, visualisation only.  
 
 ### Running the Jupyter Notebook
  - On the command line navigate to the folder location where the repository has been downloaded and saved to using the cd command to change directory.  
@@ -109,7 +111,7 @@ All citations are at the end of the cao.ipynb notebook and refrence the section 
 ## pyplot.ipynb
 ![](https://upload.wikimedia.org/wikipedia/en/5/56/Matplotlib_logo.svg)  
 
-This Repository contains an investigation into the the matplotlib.pyplot package (pyplot.ipynb) in a juypter notebook for the Fundamentals of Data Analysis Module(GMIT - Wimter 2021)
+This juypter notebook contains an investigation into the the matplotlib.pyplot package (pyplot.ipynb) for the Fundamentals of Data Analysis Module(GMIT - Winter 2021)
 
 Link to the matplotlib.pyplot documentation
 [Offical pyplot Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html)
@@ -131,7 +133,7 @@ y = np.sin(x)
 # An array with the cos of all the values in array x
 y1 = np.cos(x)
 ```
-In the section below you can change the size of the plot, axis-labels, set axis limits, change the plot point symbol annd so on.  You can also go o the [pyplot documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html) where there are over 150 matplotlib.pyplot.X functions to choose from and play with. 
+In the section below you can change the size of the plot, axis-labels, set axis limits, change the plot point symbol and so on.  You can also go o the [pyplot documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html) where there are over 150 matplotlib.pyplot.X functions to choose from and play with. 
 
 ```python
 # Produces the figure
@@ -198,7 +200,7 @@ plt.yticks(np.arange(0, 400, step=50))
 plt.title('2019 CAO POINTS')
 ```
 
-Here i created a new data frame by setting a condition on one of the columns in the original data frame
+Here I created a new data frame by setting a condition on one of the columns in the original data frame
 
 ```python
 # Bring all points back that show the course was not available in 2019
